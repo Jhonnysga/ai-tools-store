@@ -17,6 +17,11 @@ SEARCHES = {
     "rag": "retrieval augmented generation rag",
     "codigo": "ai coding assistant",
     "codigo:mcp": "mcp server model context protocol",
+    "chat": "open-webui",
+    "vectores": "vector database",
+    "finetuning": "llm fine-tuning",
+    "vision": "yolo object detection",
+    "musica": "ai music generation",
 }
 
 def gh(path):
