@@ -2,7 +2,6 @@
  "updated": "2026-10-11",
  "categories": {
   "agentes": "Agentes y frameworks",
-  "mcp": "Servidores MCP",
   "inferencia": "Inferencia de modelos",
   "voz": "Voz y audio",
   "imagen": "Imagen y video",
@@ -14,12 +13,13 @@
    "name": "obra/superpowers",
    "category": "agentes",
    "category_label": "Agentes y frameworks",
-   "desc": "Framework de habilidades para agentes y metodología de desarrollo de software con IA.",
-   "stars": 297437,
+   "desc": "Framework de habilidades para agentes y metodología de desarrollo con IA.",
+   "stars": 297443,
    "lang": "Shell",
    "info_url": "https://github.com/obra/superpowers",
    "download_url": "https://github.com/obra/superpowers/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "langchain-ai/langchain",
@@ -30,7 +30,8 @@
    "lang": "Python",
    "info_url": "https://github.com/langchain-ai/langchain",
    "download_url": "https://github.com/langchain-ai/langchain/archive/refs/heads/master.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "FoundationAgents/MetaGPT",
@@ -41,7 +42,8 @@
    "lang": "Python",
    "info_url": "https://github.com/FoundationAgents/MetaGPT",
    "download_url": "https://github.com/FoundationAgents/MetaGPT/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "microsoft/autogen",
@@ -52,7 +54,8 @@
    "lang": "Python",
    "info_url": "https://github.com/microsoft/autogen",
    "download_url": "https://github.com/microsoft/autogen/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "crewAIInc/crewAI",
@@ -63,7 +66,8 @@
    "lang": "Python",
    "info_url": "https://github.com/crewAIInc/crewAI",
    "download_url": "https://github.com/crewAIInc/crewAI/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "HKUDS/nanobot",
@@ -74,106 +78,92 @@
    "lang": "Python",
    "info_url": "https://github.com/HKUDS/nanobot",
    "download_url": "https://github.com/HKUDS/nanobot/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "langchain-ai/langgraph",
    "category": "agentes",
    "category_label": "Agentes y frameworks",
    "desc": "Construye agentes resilientes con grafos de estado.",
-   "stars": 43060,
+   "stars": 43061,
    "lang": "Python",
    "info_url": "https://github.com/langchain-ai/langgraph",
    "download_url": "https://github.com/langchain-ai/langgraph/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "modelcontextprotocol/python-sdk",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "SDK oficial en Python para crear servidores y clientes MCP.",
-   "stars": 24541,
+   "name": "AstrBotDevs/AstrBot",
+   "category": "agentes",
+   "category_label": "Agentes y frameworks",
+   "desc": "Asistente agente de IA y framework de desarrollo multiplataforma.",
+   "stars": 41717,
    "lang": "Python",
-   "info_url": "https://github.com/modelcontextprotocol/python-sdk",
-   "download_url": "https://github.com/modelcontextprotocol/python-sdk/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/AstrBotDevs/AstrBot",
+   "download_url": "https://github.com/AstrBotDevs/AstrBot/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "modelcontextprotocol/typescript-sdk",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "SDK oficial en TypeScript para servidores y clientes MCP.",
-   "stars": 13551,
+   "name": "openai/openai-agents-python",
+   "category": "agentes",
+   "category_label": "Agentes y frameworks",
+   "desc": "Framework ligero de OpenAI para flujos multiagente.",
+   "stars": 29967,
+   "lang": "Python",
+   "info_url": "https://github.com/openai/openai-agents-python",
+   "download_url": "https://github.com/openai/openai-agents-python/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "mastra-ai/mastra",
+   "category": "agentes",
+   "category_label": "Agentes y frameworks",
+   "desc": "Framework moderno en TypeScript para aplicaciones con IA.",
+   "stars": 28706,
    "lang": "TypeScript",
-   "info_url": "https://github.com/modelcontextprotocol/typescript-sdk",
-   "download_url": "https://github.com/modelcontextprotocol/typescript-sdk/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/mastra-ai/mastra",
+   "download_url": "https://github.com/mastra-ai/mastra/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "modelcontextprotocol/registry",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "Registro comunitario de servidores MCP.",
-   "stars": 7334,
-   "lang": "Go",
-   "info_url": "https://github.com/modelcontextprotocol/registry",
-   "download_url": "https://github.com/modelcontextprotocol/registry/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "name": "deepset-ai/haystack",
+   "category": "agentes",
+   "category_label": "Agentes y frameworks",
+   "desc": "Framework open source para orquestar aplicaciones de IA.",
+   "stars": 26717,
+   "lang": "Python",
+   "info_url": "https://github.com/deepset-ai/haystack",
+   "download_url": "https://github.com/deepset-ai/haystack/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "hangwin/mcp-chrome",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "Servidor MCP basado en extensión de Chrome para automatizar el navegador.",
-   "stars": 12482,
+   "name": "humanlayer/12-factor-agents",
+   "category": "agentes",
+   "category_label": "Agentes y frameworks",
+   "desc": "Principios para construir agentes con LLMs de forma confiable.",
+   "stars": 26642,
    "lang": "TypeScript",
-   "info_url": "https://github.com/hangwin/mcp-chrome",
-   "download_url": "https://github.com/hangwin/mcp-chrome/archive/refs/heads/master.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "mobile-next/mobile-mcp",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "Servidor MCP para automatización y scraping en móviles (iOS/Android).",
-   "stars": 8969,
-   "lang": "TypeScript",
-   "info_url": "https://github.com/mobile-next/mobile-mcp",
-   "download_url": "https://github.com/mobile-next/mobile-mcp/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "getsentry/MobileBuildMCP",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "Servidor MCP con herramientas para builds móviles.",
-   "stars": 6475,
-   "lang": "TypeScript",
-   "info_url": "https://github.com/getsentry/MobileBuildMCP",
-   "download_url": "https://github.com/getsentry/MobileBuildMCP/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "appcypher/awesome-mcp-servers",
-   "category": "mcp",
-   "category_label": "Servidores MCP",
-   "desc": "Lista curada de servidores MCP por categoría.",
-   "stars": 5794,
-   "lang": null,
-   "info_url": "https://github.com/appcypher/awesome-mcp-servers",
-   "download_url": "https://github.com/appcypher/awesome-mcp-servers/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/humanlayer/12-factor-agents",
+   "download_url": "https://github.com/humanlayer/12-factor-agents/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "vllm-project/vllm",
    "category": "inferencia",
    "category_label": "Inferencia de modelos",
    "desc": "Motor de inferencia de alto rendimiento para LLMs.",
-   "stars": 93561,
+   "stars": 93562,
    "lang": "Python",
    "info_url": "https://github.com/vllm-project/vllm",
    "download_url": "https://github.com/vllm-project/vllm/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "sgl-project/sglang",
@@ -184,18 +174,8 @@
    "lang": "Python",
    "info_url": "https://github.com/sgl-project/sglang",
    "download_url": "https://github.com/sgl-project/sglang/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "gpustack/gpustack",
-   "category": "inferencia",
-   "category_label": "Inferencia de modelos",
-   "desc": "Gestiona clústeres GPU para servir modelos (vLLM, Ollama).",
-   "stars": 5812,
-   "lang": "Python",
-   "info_url": "https://github.com/gpustack/gpustack",
-   "download_url": "https://github.com/gpustack/gpustack/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "kvcache-ai/Mooncake",
@@ -206,40 +186,20 @@
    "lang": "C++",
    "info_url": "https://github.com/kvcache-ai/Mooncake",
    "download_url": "https://github.com/kvcache-ai/Mooncake/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "ModelTC/LightLLM",
+   "name": "gpustack/gpustack",
    "category": "inferencia",
    "category_label": "Inferencia de modelos",
-   "desc": "Inferencia y despliegue de LLMs en Python.",
-   "stars": 4318,
+   "desc": "Gestiona clústeres GPU para servir modelos (vLLM, Ollama).",
+   "stars": 5812,
    "lang": "Python",
-   "info_url": "https://github.com/ModelTC/LightLLM",
-   "download_url": "https://github.com/ModelTC/LightLLM/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "containers/ramalama",
-   "category": "inferencia",
-   "category_label": "Inferencia de modelos",
-   "desc": "Simplifica servir modelos de IA en local.",
-   "stars": 3079,
-   "lang": "Python",
-   "info_url": "https://github.com/containers/ramalama",
-   "download_url": "https://github.com/containers/ramalama/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "name": "PaddlePaddle/FastDeploy",
-   "category": "inferencia",
-   "category_label": "Inferencia de modelos",
-   "desc": "Toolkit de inferencia y despliegue para LLMs y VLMs.",
-   "stars": 3718,
-   "lang": "Python",
-   "info_url": "https://github.com/PaddlePaddle/FastDeploy",
-   "download_url": "https://github.com/PaddlePaddle/FastDeploy/archive/refs/heads/develop.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/gpustack/gpustack",
+   "download_url": "https://github.com/gpustack/gpustack/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "skyzh/tiny-llm",
@@ -250,7 +210,80 @@
    "lang": "Python",
    "info_url": "https://github.com/skyzh/tiny-llm",
    "download_url": "https://github.com/skyzh/tiny-llm/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "ModelTC/LightLLM",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Inferencia y despliegue de LLMs en Python.",
+   "stars": 4318,
+   "lang": "Python",
+   "info_url": "https://github.com/ModelTC/LightLLM",
+   "download_url": "https://github.com/ModelTC/LightLLM/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "PaddlePaddle/FastDeploy",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Toolkit de inferencia y despliegue para LLMs y VLMs.",
+   "stars": 3718,
+   "lang": "Python",
+   "info_url": "https://github.com/PaddlePaddle/FastDeploy",
+   "download_url": "https://github.com/PaddlePaddle/FastDeploy/archive/refs/heads/develop.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "containers/ramalama",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Simplifica servir modelos de IA en local.",
+   "stars": 3079,
+   "lang": "Python",
+   "info_url": "https://github.com/containers/ramalama",
+   "download_url": "https://github.com/containers/ramalama/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "efeslab/Nanoflow",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Serving de alto rendimiento orientado a throughput.",
+   "stars": 975,
+   "lang": "Jupyter Notebook",
+   "info_url": "https://github.com/efeslab/Nanoflow",
+   "download_url": "https://github.com/efeslab/Nanoflow/archive/refs/heads/Nanoflow-python.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "EricLBuehler/candle-vllm",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Inferencia y serving local de LLMs en Rust.",
+   "stars": 732,
+   "lang": "Rust",
+   "info_url": "https://github.com/EricLBuehler/candle-vllm",
+   "download_url": "https://github.com/EricLBuehler/candle-vllm/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "vectorch-ai/ScaleLLM",
+   "category": "inferencia",
+   "category_label": "Inferencia de modelos",
+   "desc": "Sistema de inferencia de alto rendimiento para LLMs.",
+   "stars": 498,
+   "lang": "C++",
+   "info_url": "https://github.com/vectorch-ai/ScaleLLM",
+   "download_url": "https://github.com/vectorch-ai/ScaleLLM/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "netease-youdao/EmotiVoice",
@@ -261,7 +294,8 @@
    "lang": "Python",
    "info_url": "https://github.com/netease-youdao/EmotiVoice",
    "download_url": "https://github.com/netease-youdao/EmotiVoice/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "OHF-Voice/piper1-gpl",
@@ -272,7 +306,8 @@
    "lang": "C++",
    "info_url": "https://github.com/OHF-Voice/piper1-gpl",
    "download_url": "https://github.com/OHF-Voice/piper1-gpl/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "buxuku/SmartSub",
@@ -283,7 +318,8 @@
    "lang": "TypeScript",
    "info_url": "https://github.com/buxuku/SmartSub",
    "download_url": "https://github.com/buxuku/SmartSub/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "0xShug0/audio.cpp",
@@ -294,7 +330,8 @@
    "lang": "C++",
    "info_url": "https://github.com/0xShug0/audio.cpp",
    "download_url": "https://github.com/0xShug0/audio.cpp/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "High-Logic/Genie-TTS",
@@ -304,30 +341,57 @@
    "stars": 1800,
    "lang": "Python",
    "info_url": "https://github.com/High-Logic/Genie-TTS",
-   "download_url": "https://github.com/High-Logic/Genie-TTS/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "download_url": "https://github.com/High-Logic/Genie-TTS/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "samuel-vitorino/sopro",
+   "name": "Capsize-Games/airunner",
    "category": "voz",
    "category_label": "Voz y audio",
-   "desc": "TTS ligero con clonación de voz zero-shot.",
-   "stars": 971,
+   "desc": "Inferencia offline: arte y conversación por voz en tiempo real.",
+   "stars": 1318,
    "lang": "Python",
-   "info_url": "https://github.com/samuel-vitorino/sopro",
-   "download_url": "https://github.com/samuel-vitorino/sopro/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/Capsize-Games/airunner",
+   "download_url": "https://github.com/Capsize-Games/airunner/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "travisvn/chatterbox-tts-api",
+   "name": "MycroftAI/mimic3",
    "category": "voz",
    "category_label": "Voz y audio",
-   "desc": "API local compatible con OpenAI para TTS con clonación de voz.",
-   "stars": 688,
+   "desc": "Texto a voz neuronal, rápido y local.",
+   "stars": 1265,
    "lang": "Python",
-   "info_url": "https://github.com/travisvn/chatterbox-tts-api",
-   "download_url": "https://github.com/travisvn/chatterbox-tts-api/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "info_url": "https://github.com/MycroftAI/mimic3",
+   "download_url": "https://github.com/MycroftAI/mimic3/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "diodiogod/TTS-Audio-Suite",
+   "category": "voz",
+   "category_label": "Voz y audio",
+   "desc": "Nodo de ComfyUI con múltiples motores TTS locales.",
+   "stars": 1224,
+   "lang": "Python",
+   "info_url": "https://github.com/diodiogod/TTS-Audio-Suite",
+   "download_url": "https://github.com/diodiogod/TTS-Audio-Suite/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "netease-youdao/Confucius4-TTS",
+   "category": "voz",
+   "category_label": "Voz y audio",
+   "desc": "TTS multilingüe zero-shot entre idiomas.",
+   "stars": 834,
+   "lang": "Python",
+   "info_url": "https://github.com/netease-youdao/Confucius4-TTS",
+   "download_url": "https://github.com/netease-youdao/Confucius4-TTS/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "sipeter/CloneTTS",
@@ -338,7 +402,44 @@
    "lang": null,
    "info_url": "https://github.com/sipeter/CloneTTS",
    "download_url": "https://github.com/sipeter/CloneTTS/archive/refs/heads/master.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "samuel-vitorino/sopro",
+   "category": "voz",
+   "category_label": "Voz y audio",
+   "desc": "TTS ligero con clonación de voz zero-shot.",
+   "stars": 971,
+   "lang": "Python",
+   "info_url": "https://github.com/samuel-vitorino/sopro",
+   "download_url": "https://github.com/samuel-vitorino/sopro/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "travisvn/chatterbox-tts-api",
+   "category": "voz",
+   "category_label": "Voz y audio",
+   "desc": "API local compatible con OpenAI para TTS con clonación de voz.",
+   "stars": 688,
+   "lang": "Python",
+   "info_url": "https://github.com/travisvn/chatterbox-tts-api",
+   "download_url": "https://github.com/travisvn/chatterbox-tts-api/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "echogarden-project/echogarden",
+   "category": "voz",
+   "category_label": "Voz y audio",
+   "desc": "Herramientas de voz multiplataforma desde la terminal.",
+   "stars": 452,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/echogarden-project/echogarden",
+   "download_url": "https://github.com/echogarden-project/echogarden/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "AUTOMATIC1111/stable-diffusion-webui",
@@ -348,19 +449,21 @@
    "stars": 165042,
    "lang": "Python",
    "info_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-   "download_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "download_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "calesthio/OpenMontage",
    "category": "imagen",
    "category_label": "Imagen y video",
    "desc": "Sistema agéntico open source de producción de video.",
-   "stars": 66664,
+   "stars": 66678,
    "lang": "Python",
    "info_url": "https://github.com/calesthio/OpenMontage",
    "download_url": "https://github.com/calesthio/OpenMontage/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "invoke-ai/InvokeAI",
@@ -371,7 +474,8 @@
    "lang": "TypeScript",
    "info_url": "https://github.com/invoke-ai/InvokeAI",
    "download_url": "https://github.com/invoke-ai/InvokeAI/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "lllyasviel/stable-diffusion-webui-forge",
@@ -382,7 +486,8 @@
    "lang": "Python",
    "info_url": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
    "download_url": "https://github.com/lllyasviel/stable-diffusion-webui-forge/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "zai-org/CogVideo",
@@ -393,7 +498,20 @@
    "lang": "Python",
    "info_url": "https://github.com/zai-org/CogVideo",
    "download_url": "https://github.com/zai-org/CogVideo/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "AbdBarho/stable-diffusion-webui-docker",
+   "category": "imagen",
+   "category_label": "Imagen y video",
+   "desc": "Stable Diffusion con Docker, instalación simple.",
+   "stars": 7303,
+   "lang": "Shell",
+   "info_url": "https://github.com/AbdBarho/stable-diffusion-webui-docker",
+   "download_url": "https://github.com/AbdBarho/stable-diffusion-webui-docker/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "open-mmlab/mmagic",
@@ -404,18 +522,20 @@
    "lang": "Jupyter Notebook",
    "info_url": "https://github.com/open-mmlab/mmagic",
    "download_url": "https://github.com/open-mmlab/mmagic/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
-   "name": "AbdBarho/stable-diffusion-webui-docker",
+   "name": "Sygil-Dev/sygil-webui",
    "category": "imagen",
    "category_label": "Imagen y video",
-   "desc": "Stable Diffusion con Docker, instalación simple.",
-   "stars": 7303,
-   "lang": "Shell",
-   "info_url": "https://github.com/AbdBarho/stable-diffusion-webui-docker",
-   "download_url": "https://github.com/AbdBarho/stable-diffusion-webui-docker/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "desc": "Interfaz web para Stable Diffusion.",
+   "stars": 7859,
+   "lang": "Python",
+   "info_url": "https://github.com/Sygil-Dev/sygil-webui",
+   "download_url": "https://github.com/Sygil-Dev/sygil-webui/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "Tencent-Hunyuan/Hunyuan3D-1",
@@ -426,40 +546,56 @@
    "lang": "Python",
    "info_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-1",
    "download_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-1/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "FurkanGozukara/Stable-Diffusion",
+   "category": "imagen",
+   "category_label": "Imagen y video",
+   "desc": "Guías de FLUX, SDXL, LoRA y fine-tuning.",
+   "stars": 2776,
+   "lang": "Jupyter Notebook",
+   "info_url": "https://github.com/FurkanGozukara/Stable-Diffusion",
+   "download_url": "https://github.com/FurkanGozukara/Stable-Diffusion/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "infiniflow/ragflow",
    "category": "rag",
    "category_label": "RAG y búsqueda",
    "desc": "Sistema RAG open source de nivel producción.",
-   "stars": 91992,
+   "stars": 91993,
    "lang": "Go",
    "info_url": "https://github.com/infiniflow/ragflow",
    "download_url": "https://github.com/infiniflow/ragflow/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "HKUDS/LightRAG",
    "category": "rag",
    "category_label": "RAG y búsqueda",
    "desc": "RAG simple y rápido con grafos de conocimiento.",
-   "stars": 40066,
+   "stars": 40067,
    "lang": "Python",
    "info_url": "https://github.com/HKUDS/LightRAG",
    "download_url": "https://github.com/HKUDS/LightRAG/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "microsoft/graphrag",
    "category": "rag",
    "category_label": "RAG y búsqueda",
    "desc": "RAG modular basado en grafos, de Microsoft.",
-   "stars": 36289,
+   "stars": 36290,
    "lang": "Python",
    "info_url": "https://github.com/microsoft/graphrag",
    "download_url": "https://github.com/microsoft/graphrag/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "NirDiamant/RAG_Techniques",
@@ -470,7 +606,8 @@
    "lang": "Jupyter Notebook",
    "info_url": "https://github.com/NirDiamant/RAG_Techniques",
    "download_url": "https://github.com/NirDiamant/RAG_Techniques/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "SciPhi-AI/R2R",
@@ -481,7 +618,8 @@
    "lang": "Python",
    "info_url": "https://github.com/SciPhi-AI/R2R",
    "download_url": "https://github.com/SciPhi-AI/R2R/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "weaviate/Verba",
@@ -492,7 +630,8 @@
    "lang": "Python",
    "info_url": "https://github.com/weaviate/Verba",
    "download_url": "https://github.com/weaviate/Verba/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "truefoundry/cognita",
@@ -503,7 +642,44 @@
    "lang": "Python",
    "info_url": "https://github.com/truefoundry/cognita",
    "download_url": "https://github.com/truefoundry/cognita/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "rag-web-ui/rag-web-ui",
+   "category": "rag",
+   "category_label": "RAG y búsqueda",
+   "desc": "Sistema de diálogo inteligente con RAG e interfaz web.",
+   "stars": 3298,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/rag-web-ui/rag-web-ui",
+   "download_url": "https://github.com/rag-web-ui/rag-web-ui/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "NVIDIA/ChatRTX",
+   "category": "rag",
+   "category_label": "RAG y búsqueda",
+   "desc": "Referencia de NVIDIA para RAG local con RTX.",
+   "stars": 3113,
+   "lang": "Python",
+   "info_url": "https://github.com/NVIDIA/ChatRTX",
+   "download_url": "https://github.com/NVIDIA/ChatRTX/archive/refs/heads/release/0.5.0.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "athina-ai/rag-cookbooks",
+   "category": "rag",
+   "category_label": "RAG y búsqueda",
+   "desc": "Recetas con técnicas avanzadas de RAG.",
+   "stars": 2575,
+   "lang": "Jupyter Notebook",
+   "info_url": "https://github.com/athina-ai/rag-cookbooks",
+   "download_url": "https://github.com/athina-ai/rag-cookbooks/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "Fission-AI/OpenSpec",
@@ -514,7 +690,8 @@
    "lang": "TypeScript",
    "info_url": "https://github.com/Fission-AI/OpenSpec",
    "download_url": "https://github.com/Fission-AI/OpenSpec/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "TabbyML/tabby",
@@ -525,29 +702,44 @@
    "lang": "Rust",
    "info_url": "https://github.com/TabbyML/tabby",
    "download_url": "https://github.com/TabbyML/tabby/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "chenhg5/cc-connect",
    "category": "codigo",
    "category_label": "Código y desarrollo",
    "desc": "Conecta agentes de código locales (Claude Code, Cursor, Codex).",
-   "stars": 15875,
+   "stars": 15876,
    "lang": "Go",
    "info_url": "https://github.com/chenhg5/cc-connect",
    "download_url": "https://github.com/chenhg5/cc-connect/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "coleam00/context-engineering-intro",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Guía práctica de ingeniería de contexto para programar con IA.",
+   "stars": 13882,
+   "lang": "Python",
+   "info_url": "https://github.com/coleam00/context-engineering-intro",
+   "download_url": "https://github.com/coleam00/context-engineering-intro/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "google/artemis",
    "category": "codigo",
    "category_label": "Código y desarrollo",
    "desc": "Convierte instrucciones en lenguaje natural en automatización Android.",
-   "stars": 11326,
+   "stars": 11327,
    "lang": "Python",
    "info_url": "https://github.com/google/artemis",
    "download_url": "https://github.com/google/artemis/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
   },
   {
    "name": "sweepai/sweep",
@@ -558,7 +750,164 @@
    "lang": "Jupyter Notebook",
    "info_url": "https://github.com/sweepai/sweep",
    "download_url": "https://github.com/sweepai/sweep/archive/refs/heads/main.zip",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "github/CopilotForXcode",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Asistente de código IA para Xcode.",
+   "stars": 6330,
+   "lang": "Swift",
+   "info_url": "https://github.com/github/CopilotForXcode",
+   "download_url": "https://github.com/github/CopilotForXcode/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "google/agents-cli",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "CLI que convierte asistentes de código en agentes.",
+   "stars": 6073,
+   "lang": "Python",
+   "info_url": "https://github.com/google/agents-cli",
+   "download_url": "https://github.com/google/agents-cli/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "the-open-agent/openagent",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Asistente personal de nueva generación con LLMs.",
+   "stars": 5683,
+   "lang": "Go",
+   "info_url": "https://github.com/the-open-agent/openagent",
+   "download_url": "https://github.com/the-open-agent/openagent/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "langwatch/langwatch",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Observabilidad y evaluación open source para agentes.",
+   "stars": 4937,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/langwatch/langwatch",
+   "download_url": "https://github.com/langwatch/langwatch/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "sourcegraph/cody-public-snapshot",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Asistente de código IA de Sourcegraph.",
+   "stars": 3800,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/sourcegraph/cody-public-snapshot",
+   "download_url": "https://github.com/sourcegraph/cody-public-snapshot/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "twinnydotdev/twinny",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Asistente de código open source para VS Code.",
+   "stars": 3665,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/twinnydotdev/twinny",
+   "download_url": "https://github.com/twinnydotdev/twinny/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "modelcontextprotocol/python-sdk",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "SDK oficial en Python para crear servidores y clientes MCP.",
+   "stars": 24541,
+   "lang": "Python",
+   "info_url": "https://github.com/modelcontextprotocol/python-sdk",
+   "download_url": "https://github.com/modelcontextprotocol/python-sdk/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "modelcontextprotocol/typescript-sdk",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "SDK oficial en TypeScript para servidores y clientes MCP.",
+   "stars": 13551,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/modelcontextprotocol/typescript-sdk",
+   "download_url": "https://github.com/modelcontextprotocol/typescript-sdk/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "modelcontextprotocol/registry",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Registro comunitario de servidores MCP.",
+   "stars": 7334,
+   "lang": "Go",
+   "info_url": "https://github.com/modelcontextprotocol/registry",
+   "download_url": "https://github.com/modelcontextprotocol/registry/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "hangwin/mcp-chrome",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Servidor MCP con extensión de Chrome para automatizar el navegador.",
+   "stars": 12482,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/hangwin/mcp-chrome",
+   "download_url": "https://github.com/hangwin/mcp-chrome/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "mobile-next/mobile-mcp",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Servidor MCP para automatización móvil (iOS/Android).",
+   "stars": 8969,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/mobile-next/mobile-mcp",
+   "download_url": "https://github.com/mobile-next/mobile-mcp/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "CodeGraphContext/CodeGraphContext",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Servidor MCP + CLI que indexa código local.",
+   "stars": 4254,
+   "lang": "Python",
+   "info_url": "https://github.com/CodeGraphContext/CodeGraphContext",
+   "download_url": "https://github.com/CodeGraphContext/CodeGraphContext/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "appcypher/awesome-mcp-servers",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Lista curada de servidores MCP por categoría.",
+   "stars": 5794,
+   "lang": null,
+   "info_url": "https://github.com/appcypher/awesome-mcp-servers",
+   "download_url": "https://github.com/appcypher/awesome-mcp-servers/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
   }
  ]
 }
