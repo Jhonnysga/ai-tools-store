@@ -1794,6 +1794,42 @@
    "download_url": "https://github.com/paperless-ngx/paperless-ngx/archive/refs/heads/dev.zip",
    "first_seen": "2026-10-11",
    "mcp": false
+  },
+  {
+   "name": "cline/cline",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Agente de código autónomo con soporte MCP (SDK, extensión IDE o CLI).",
+   "stars": 70168,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/cline/cline",
+   "download_url": "https://github.com/cline/cline/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "punkpeye/awesome-mcp-clients",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Colección de clientes MCP.",
+   "stars": 6604,
+   "lang": null,
+   "info_url": "https://github.com/punkpeye/awesome-mcp-clients",
+   "download_url": "https://github.com/punkpeye/awesome-mcp-clients/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "firecrawl/firecrawl-mcp-server",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Servidor MCP oficial de Firecrawl: scraping web potente.",
+   "stars": 7584,
+   "lang": "JavaScript",
+   "info_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+   "download_url": "https://github.com/firecrawl/firecrawl-mcp-server/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
   }
  ]
 }
