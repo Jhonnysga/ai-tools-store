@@ -6,9 +6,9 @@
 <title>Tienda de herramientas IA</title>
 <style>
 :root{
-  --bg:#ffffff; --canvas:#f6f8fa; --fg:#1f2328; --muted:#59636e;
-  --border:#d1d9e0; --blue:#0969da; --blue-bg:#ddf4ff;
-  --green:#1a7f37; --green-bg:#dafbe1; --header:#24292f;
+  --bg:#0d1117; --header:#010409; --canvas:#161b22; --canvas2:#1c2128;
+  --fg:#e6edf3; --muted:#7d8590; --border:#30363d;
+  --blue:#4493f8; --blue-bg:#12253a; --green:#2ea043; --green-bg:#12261a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
@@ -16,52 +16,53 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helveti
 .num{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
-header{background:var(--header);color:#fff;padding:18px 24px}
-header h1{font-size:20px;font-weight:600}
-header h1 .tag{display:inline-block;font-size:11px;font-weight:600;background:#388bfd33;
-  color:#79c0ff;border:1px solid #388bfd66;border-radius:2em;padding:2px 10px;
+header{background:var(--header);border-bottom:1px solid var(--border);padding:18px 24px}
+.wrap{max-width:1012px;margin:0 auto}
+header h1{font-size:20px;font-weight:600;color:#f0f6fc}
+header h1 .tag{display:inline-block;font-size:11px;font-weight:600;background:#388bfd26;
+  color:#79c0ff;border:1px solid #388bfd55;border-radius:2em;padding:2px 10px;
   margin-left:10px;vertical-align:middle}
-header p{color:#adbac7;font-size:13px;margin-top:4px}
+header p{color:var(--muted);font-size:13px;margin-top:4px}
 .toolbar{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;align-items:center}
 .search{flex:1;min-width:200px;display:flex}
-.search input{width:100%;padding:7px 12px;font-size:14px;border:1px solid #444c56;
-  border-radius:6px;background:#2d333b;color:#fff}
-.search input::placeholder{color:#768390}
+.search input{width:100%;padding:7px 12px;font-size:14px;border:1px solid var(--border);
+  border-radius:6px;background:var(--canvas);color:var(--fg)}
+.search input::placeholder{color:var(--muted)}
 .search input:focus{outline:2px solid var(--blue);border-color:var(--blue)}
-select{padding:7px 10px;font-size:13px;border:1px solid #444c56;border-radius:6px;
-  background:#2d333b;color:#fff}
-.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:#adbac7;cursor:pointer}
+select{padding:7px 10px;font-size:13px;border:1px solid var(--border);border-radius:6px;
+  background:var(--canvas);color:var(--fg)}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}
 .pills{display:flex;gap:8px;overflow-x:auto;padding:14px 0 4px}
 .pill{white-space:nowrap;font-size:12px;font-weight:600;padding:5px 12px;
-  border:1px solid #444c56;border-radius:2em;background:#2d333b;color:#adbac7;cursor:pointer;
-  display:flex;align-items:center;gap:6px}
+  border:1px solid var(--border);border-radius:2em;background:var(--canvas);color:var(--muted);
+  cursor:pointer;display:flex;align-items:center;gap:6px}
 .pill .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-.pill:hover{border-color:#768390;color:#fff}
-.pill.on{background:#fff;border-color:#fff;color:var(--header)}
+.pill:hover{border-color:var(--muted);color:var(--fg)}
+.pill.on{background:var(--fg);border-color:var(--fg);color:var(--header)}
 main{padding:8px 24px 60px}
-h2.sec{font-size:16px;font-weight:600;padding:20px 0 2px;margin-bottom:0;
-  display:flex;align-items:center;gap:8px;border-bottom:3px solid var(--cat,#0969da)}
-h2.sec .cdot{width:14px;height:14px;border-radius:4px;background:var(--cat,#0969da);display:inline-block}
+h2.sec{font-size:16px;font-weight:600;padding:20px 0 2px;margin-bottom:0;color:#f0f6fc;
+  display:flex;align-items:center;gap:8px;border-bottom:3px solid var(--cat,#4493f8)}
+h2.sec .cdot{width:14px;height:14px;border-radius:4px;background:var(--cat,#4493f8);display:inline-block}
 p.sub{color:var(--muted);font-size:12px;padding:6px 0 0}
 .label{display:inline-block;font-size:11px;font-weight:600;line-height:18px;padding:0 8px;
   border-radius:2em;border:1px solid transparent;vertical-align:middle}
-.label-mcp{color:#0550ae;background:var(--blue-bg);border-color:#b6e3ff}
-.label-new{color:var(--green);background:var(--green-bg);border-color:#aceebb}
+.label-mcp{color:#79c0ff;background:var(--blue-bg);border-color:#1f6feb66}
+.label-new{color:#7ee787;background:var(--green-bg);border-color:#2ea04366}
 .row{display:flex;gap:12px;padding:16px 4px;border-bottom:1px solid var(--border)}
 .row .main{flex:1;min-width:0}
 .row h3{font-size:16px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.row p.desc{color:var(--fg);font-size:14px;margin:4px 0 8px;max-width:75ch}
+.row p.desc{color:#c9d1d9;font-size:14px;margin:4px 0 8px;max-width:75ch}
 .meta{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap}
 .meta .langdot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;
-  border:1px solid rgba(0,0,0,.15);vertical-align:-1px}
+  border:1px solid rgba(255,255,255,.2);vertical-align:-1px}
 .meta svg{vertical-align:-2px;margin-right:4px}
 .row .side{display:flex;flex-direction:column;gap:8px;align-items:flex-end;justify-content:center}
 .btn{display:inline-block;font-size:12px;font-weight:600;padding:5px 14px;border-radius:6px;
-  border:1px solid var(--border);background:var(--canvas);color:var(--fg);cursor:pointer;
+  border:1px solid var(--border);background:var(--canvas2);color:var(--fg);cursor:pointer;
   text-decoration:none;white-space:nowrap}
-.btn:hover{background:#eaeef2;text-decoration:none}
-.btn.primary{background:var(--green);border-color:var(--green);color:#fff}
-.btn.primary:hover{filter:brightness(.94);text-decoration:none}
+.btn:hover{background:#262c36;text-decoration:none;border-color:var(--muted)}
+.btn.primary{background:var(--green);border-color:#2ea043;color:#fff}
+.btn.primary:hover{background:#2ea043;filter:brightness(1.1);text-decoration:none}
 .empty{color:var(--muted);padding:24px 4px;font-size:14px}
 footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
   text-align:center;padding:20px}
@@ -70,7 +71,7 @@ footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
 </head>
 <body>
 <header>
-  <div class="wrap" style="max-width:1012px;margin:0 auto">
+  <div class="wrap">
     <h1>Tienda de herramientas IA <span class="tag">GitHub · por estrellas</span></h1>
     <p>Las herramientas de IA más populares de GitHub, organizadas por categoría. <span id="upd"></span></p>
     <div class="toolbar">
@@ -85,10 +86,10 @@ footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
     <div class="pills" id="pills"></div>
   </div>
 </header>
-<main class="wrap" style="max-width:1012px;margin:0 auto">
+<main class="wrap">
   <div id="count"></div>
   <section id="sec-new">
-    <h2 class="sec" style="--cat:#1a7f37"><span class="cdot"></span>Novedades <span class="label label-new">NUEVO</span></h2>
+    <h2 class="sec" style="--cat:#3fb950"><span class="cdot"></span>Novedades <span class="label label-new">NUEVO</span></h2>
     <p class="sub">Detectadas en los últimos 30 días, con estrellas por encima del promedio de su categoría.</p>
     <div id="list-new"></div>
   </section>
@@ -142,7 +143,7 @@ function render(){
     if(activeCat&&activeCat!==k) continue;
     const ts=list.filter(t=>t.category===k);
     if(!ts.length) continue;
-    const col=(DATA.colors&&DATA.colors[k])||"#0969da";
+    const col=(DATA.colors&&DATA.colors[k])||"#4493f8";
     const s=document.createElement("section");
     s.innerHTML=`<h2 class="sec" style="--cat:${col}"><span class="cdot"></span>${label}</h2>
       <p class="sub num">${ts.length} herramientas · promedio ${fmt(Math.round(avg(k)))} estrellas</p>
