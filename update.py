@@ -22,6 +22,8 @@ SEARCHES = {
     "finetuning": "llm fine-tuning",
     "vision": "yolo object detection",
     "musica": "ai music generation",
+    "video": "topic:text-to-video",
+    "ocr": "topic:ocr",
 }
 
 def gh(path):
