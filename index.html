@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda de herramientas IA — GitHub</title>
+<style>
+:root{
+  --bg:#f7f8fa; --card:#ffffff; --ink:#1a1d21; --muted:#6b7280;
+  --line:#e5e7eb; --blue:#2563eb; --blue-dark:#1d4ed8; --green:#047857;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.5}
+.num{font-variant-numeric:tabular-nums}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:20px 24px;
+  position:sticky;top:0;z-index:10}
+.wrap{max-width:1100px;margin:0 auto}
+header h1{font-size:22px;font-weight:700;letter-spacing:-.02em}
+header p{color:var(--muted);font-size:13px;margin-top:4px}
+.toolbar{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.toolbar input{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);
+  border-radius:8px;font-size:14px;background:#fff}
+.toolbar input:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+.toolbar select{padding:9px 12px;border:1px solid var(--line);border-radius:8px;
+  font-size:14px;background:#fff;color:var(--ink)}
+main{padding:28px 24px 60px}
+h2.sec{font-size:17px;font-weight:700;margin:30px 0 4px;letter-spacing:-.01em}
+p.sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+.badge-new{display:inline-block;background:#eff6ff;color:var(--blue-dark);font-size:11px;
+  font-weight:700;padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;
+  display:flex;flex-direction:column;gap:8px}
+.card:hover{border-color:#c7d7f8;box-shadow:0 2px 8px rgba(37,99,235,.08)}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.card h3{font-size:15px;font-weight:650;word-break:break-all}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--blue)}
+.stars{color:#92690e;font-size:13px;font-weight:600;white-space:nowrap}
+.card p.desc{font-size:13px;color:#374151;flex:1}
+.meta{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.lang{background:#f1f5f9;border:1px solid var(--line);border-radius:6px;
+  padding:1px 8px;font-size:11px;font-weight:600}
+.actions{display:flex;gap:8px;margin-top:4px}
+.btn{display:inline-block;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:600;
+  text-decoration:none;text-align:center;flex:1}
+.btn.info{background:#eff6ff;color:var(--blue-dark);border:1px solid #bfdbfe}
+.btn.info:hover{background:#dbeafe}
+.btn.dl{background:var(--blue);color:#fff;border:1px solid var(--blue)}
+.btn.dl:hover{background:var(--blue-dark)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
+.empty{color:var(--muted);font-size:14px;padding:20px 0}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Tienda de herramientas IA</h1>
+    <p>Las herramientas de IA más populares de GitHub, por categoría. <span id="upd"></span></p>
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="Buscar herramienta..." autocomplete="off">
+      <select id="cat"><option value="">Todas las categorías</option></select>
+      <select id="sort">
+        <option value="stars">Más estrellas</option>
+        <option value="name">Nombre A–Z</option>
+      </select>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section id="sec-new">
+    <h2 class="sec">Novedades<span class="badge-new">NUEVO</span></h2>
+    <p class="sub">Detectadas en los últimos 30 días, con estrellas por encima del promedio de su categoría.</p>
+    <div class="grid" id="grid-new"></div>
+  </section>
+  <div id="cats"></div>
+</main>
+<footer>Datos de la API pública de GitHub · Actualización diaria · Los enlaces de descarga apuntan al .zip oficial de cada repo</footer>
+<script>
+let DATA=null;
+const $=s=>document.querySelector(s);
+const fmt=n=>n>=1000?(n/1000).toFixed(1).replace('.',',')+' mil':String(n);
+
+function card(t){
+  return `<div class="card">
+    <div class="top"><h3><a href="${t.info_url}" target="_blank" rel="noopener">${t.name}</a></h3>
+    <span class="stars num">★ ${fmt(t.stars)}</span></div>
+    <p class="desc">${t.desc}</p>
+    <div class="meta">${t.lang?`<span class="lang">${t.lang}</span>`:''}<span>${t.category_label}</span></div>
+    <div class="actions">
+      <a class="btn info" href="${t.info_url}" target="_blank" rel="noopener">Más info</a>
+      <a class="btn dl" href="${t.download_url}" rel="noopener">Descargar</a>
+    </div></div>`;
+}
+function isNew(t){
+  const days=(Date.now()-new Date(t.first_seen+'T00:00:00Z'))/864e5;
+  return days<=30;
+}
+function avgStars(cat){
+  const ts=DATA.tools.filter(t=>t.category===cat);
+  return ts.reduce((a,t)=>a+t.stars,0)/Math.max(1,ts.length);
+}
+function render(){
+  const q=$('#q').value.toLowerCase(), c=$('#cat').value, s=$('#sort').value;
+  let list=DATA.tools.filter(t=>
+    (!c||t.category===c) &&
+    (!q||t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)));
+  list.sort((a,b)=>s==='stars'?b.stars-a.stars:a.name.localeCompare(b.name));
+  // Novedades
+  const news=DATA.tools.filter(t=>isNew(t)&&t.stars>avgStars(t.category))
+    .sort((a,b)=>b.stars-a.stars).slice(0,6);
+  $('#grid-new').innerHTML=news.length?news.map(card).join(''):
+    '<p class="empty">Sin novedades destacadas por ahora.</p>';
+  $('#sec-new').style.display=(!q&&!c)?'':'none';
+  // Categorías
+  const box=$('#cats'); box.innerHTML='';
+  for(const [key,label] of Object.entries(DATA.categories)){
+    if(c&&c!==key) continue;
+    const ts=list.filter(t=>t.category===key);
+    if(!ts.length) continue;
+    const sec=document.createElement('section');
+    sec.innerHTML=`<h2 class="sec">${label}</h2>
+      <p class="sub num">${ts.length} herramientas · promedio ${fmt(Math.round(avgStars(key)))} estrellas</p>
+      <div class="grid">${ts.map(card).join('')}</div>`;
+    box.appendChild(sec);
+  }
+  if(!box.children.length) box.innerHTML='<p class="empty">Sin resultados.</p>';
+}
+fetch('data/catalog.json').then(r=>r.json()).then(d=>{
+  DATA=d;
+  $('#upd').textContent='Actualizado el '+d.updated+'.';
+  const sel=$('#cat');
+  for(const [k,v] of Object.entries(d.categories)){
+    const o=document.createElement('option'); o.value=k; o.textContent=v; sel.appendChild(o);
+  }
+  $('#q').addEventListener('input',render);
+  $('#cat').addEventListener('change',render);
+  $('#sort').addEventListener('change',render);
+  render();
+});
+</script>
+</body>
+</html>
