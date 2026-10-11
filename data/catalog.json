@@ -941,7 +941,7 @@
    "info_url": "https://github.com/open-webui/open-webui",
    "download_url": "https://github.com/open-webui/open-webui/archive/refs/heads/main.zip",
    "first_seen": "2026-10-11",
-   "mcp": false
+   "mcp": true
   },
   {
    "name": "LibreChat-AI/LibreChat",
@@ -953,7 +953,7 @@
    "info_url": "https://github.com/LibreChat-AI/LibreChat",
    "download_url": "https://github.com/LibreChat-AI/LibreChat/archive/refs/heads/main.zip",
    "first_seen": "2026-10-11",
-   "mcp": false
+   "mcp": true
   },
   {
    "name": "siteboon/claudecodeui",
@@ -1828,6 +1828,18 @@
    "lang": "JavaScript",
    "info_url": "https://github.com/firecrawl/firecrawl-mcp-server",
    "download_url": "https://github.com/firecrawl/firecrawl-mcp-server/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": true
+  },
+  {
+   "name": "op7418/CodePilot",
+   "category": "codigo",
+   "category_label": "Código y desarrollo",
+   "desc": "Cliente de escritorio con agentes IA multimodelo y MCP.",
+   "stars": 6498,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/op7418/CodePilot",
+   "download_url": "https://github.com/op7418/CodePilot/archive/refs/heads/main.zip",
    "first_seen": "2026-10-11",
    "mcp": true
   }
