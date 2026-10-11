@@ -3,141 +3,163 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tienda de herramientas IA — GitHub</title>
+<title>Tienda de herramientas IA</title>
 <style>
 :root{
-  --bg:#f7f8fa; --card:#ffffff; --ink:#1a1d21; --muted:#6b7280;
-  --line:#e5e7eb; --blue:#2563eb; --blue-dark:#1d4ed8; --green:#047857;
+  --bg:#ffffff; --canvas:#f6f8fa; --fg:#1f2328; --muted:#59636e;
+  --border:#d1d9e0; --blue:#0969da; --blue-bg:#ddf4ff;
+  --green:#1a7f37; --green-bg:#dafbe1;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.5}
-.num{font-variant-numeric:tabular-nums}
-header{background:var(--card);border-bottom:1px solid var(--line);padding:20px 24px;
-  position:sticky;top:0;z-index:10}
-.wrap{max-width:1100px;margin:0 auto}
-header h1{font-size:22px;font-weight:700;letter-spacing:-.02em}
-header p{color:var(--muted);font-size:13px;margin-top:4px}
-.toolbar{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-.toolbar input{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);
-  border-radius:8px;font-size:14px;background:#fff}
-.toolbar input:focus{outline:2px solid var(--blue);border-color:var(--blue)}
-.toolbar select{padding:9px 12px;border:1px solid var(--line);border-radius:8px;
-  font-size:14px;background:#fff;color:var(--ink)}
-main{padding:28px 24px 60px}
-h2.sec{font-size:17px;font-weight:700;margin:30px 0 4px;letter-spacing:-.01em}
-p.sub{color:var(--muted);font-size:13px;margin-bottom:16px}
-.badge-new{display:inline-block;background:#eff6ff;color:var(--blue-dark);font-size:11px;
-  font-weight:700;padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;
-  display:flex;flex-direction:column;gap:8px}
-.card:hover{border-color:#c7d7f8;box-shadow:0 2px 8px rgba(37,99,235,.08)}
-.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.card h3{font-size:15px;font-weight:650;word-break:break-all}
-.card h3 a{color:var(--ink);text-decoration:none}
-.card h3 a:hover{color:var(--blue)}
-.stars{color:#92690e;font-size:13px;font-weight:600;white-space:nowrap}
-.card p.desc{font-size:13px;color:#374151;flex:1}
-.meta{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
-.lang{background:#f1f5f9;border:1px solid var(--line);border-radius:6px;
-  padding:1px 8px;font-size:11px;font-weight:600}
-.actions{display:flex;gap:8px;margin-top:4px}
-.btn{display:inline-block;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:600;
-  text-decoration:none;text-align:center;flex:1}
-.btn.info{background:#eff6ff;color:var(--blue-dark);border:1px solid #bfdbfe}
-.btn.info:hover{background:#dbeafe}
-.btn.dl{background:var(--blue);color:#fff;border:1px solid var(--blue)}
-.btn.dl:hover{background:var(--blue-dark)}
-footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
-.empty{color:var(--muted);font-size:14px;padding:20px 0}
-@media(max-width:600px){.grid{grid-template-columns:1fr}}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--fg);font-size:14px;line-height:1.5}
+.num{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--canvas);border-bottom:1px solid var(--border);padding:16px 24px}
+.wrap{max-width:1012px;margin:0 auto}
+header h1{font-size:20px;font-weight:600}
+header h1 .sub{color:var(--muted);font-weight:400;font-size:14px;margin-left:8px}
+.toolbar{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:200px;display:flex}
+.search input{width:100%;padding:7px 12px;font-size:14px;border:1px solid var(--border);
+  border-radius:6px;background:#fff;color:var(--fg)}
+.search input:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+select{padding:7px 10px;font-size:13px;border:1px solid var(--border);border-radius:6px;
+  background:var(--canvas);color:var(--fg)}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}
+.pills{display:flex;gap:8px;overflow-x:auto;padding:14px 0 4px}
+.pill{white-space:nowrap;font-size:12px;font-weight:500;padding:4px 12px;border:1px solid var(--border);
+  border-radius:2em;background:var(--canvas);color:var(--fg);cursor:pointer}
+.pill:hover{background:#eaeef2}
+.pill.on{background:var(--blue);border-color:var(--blue);color:#fff}
+main{padding:8px 24px 60px}
+h2.sec{font-size:16px;font-weight:600;padding:20px 0 2px;border-bottom:1px solid var(--border);
+  margin-bottom:0;display:flex;align-items:center;gap:8px}
+p.sub{color:var(--muted);font-size:12px;padding:6px 0 0}
+.label{display:inline-block;font-size:11px;font-weight:500;line-height:18px;padding:0 8px;
+  border-radius:2em;border:1px solid transparent;vertical-align:middle}
+.label-mcp{color:#0550ae;background:var(--blue-bg);border-color:#b6e3ff}
+.label-new{color:var(--green);background:var(--green-bg);border-color:#aceebb}
+.row{display:flex;gap:12px;padding:16px 4px;border-bottom:1px solid var(--border)}
+.row .main{flex:1;min-width:0}
+.row h3{font-size:16px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.row p.desc{color:var(--fg);font-size:14px;margin:4px 0 8px;max-width:75ch}
+.meta{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.meta .langdot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;
+  border:1px solid rgba(0,0,0,.15);vertical-align:-1px}
+.meta svg{vertical-align:-2px;margin-right:4px}
+.row .side{display:flex;flex-direction:column;gap:8px;align-items:flex-end;justify-content:center}
+.btn{display:inline-block;font-size:12px;font-weight:500;padding:5px 14px;border-radius:6px;
+  border:1px solid var(--border);background:var(--canvas);color:var(--fg);cursor:pointer;
+  text-decoration:none;white-space:nowrap}
+.btn:hover{background:#eaeef2;text-decoration:none}
+.btn.primary{background:var(--green);border-color:var(--green);color:#fff}
+.btn.primary:hover{background:#1a7f37;filter:brightness(.94)}
+.empty{color:var(--muted);padding:24px 4px;font-size:14px}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
+  text-align:center;padding:20px}
+#count{color:var(--muted);font-size:12px;padding:10px 0 0}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <h1>Tienda de herramientas IA</h1>
-    <p>Las herramientas de IA más populares de GitHub, por categoría. <span id="upd"></span></p>
+    <h1>Tienda de herramientas IA<span class="sub">Lo más popular de GitHub, por categoría</span></h1>
     <div class="toolbar">
-      <input id="q" type="search" placeholder="Buscar herramienta..." autocomplete="off">
-      <select id="cat"><option value="">Todas las categorías</option></select>
+      <div class="search"><input id="q" type="search" placeholder="Buscar herramienta..." autocomplete="off"></div>
       <select id="sort">
         <option value="stars">Más estrellas</option>
         <option value="name">Nombre A–Z</option>
+        <option value="recent">Agregado reciente</option>
       </select>
+      <label class="chk"><input type="checkbox" id="mcp"> Solo MCP</label>
     </div>
+    <div class="pills" id="pills"></div>
   </div>
 </header>
 <main class="wrap">
+  <div id="count"></div>
   <section id="sec-new">
-    <h2 class="sec">Novedades<span class="badge-new">NUEVO</span></h2>
+    <h2 class="sec">Novedades <span class="label label-new">NUEVO</span></h2>
     <p class="sub">Detectadas en los últimos 30 días, con estrellas por encima del promedio de su categoría.</p>
-    <div class="grid" id="grid-new"></div>
+    <div id="list-new"></div>
   </section>
   <div id="cats"></div>
 </main>
-<footer>Datos de la API pública de GitHub · Actualización diaria · Los enlaces de descarga apuntan al .zip oficial de cada repo</footer>
+<footer><span id="upd"></span> · Datos de la API pública de GitHub · La insignia MCP indica que la herramienta se conecta por Model Context Protocol</footer>
 <script>
-let DATA=null;
+const LANGCOLORS={Python:"#3572A5",TypeScript:"#3178c6",JavaScript:"#f1e05a",Go:"#00ADD8",
+Rust:"#dea584",Shell:"#89e051","C++":"#f34b7d",C:"#555555","Jupyter Notebook":"#DA5B0B",
+Java:"#b07219",HTML:"#e34c26",CSS:"#563d7c",Kotlin:"#A97BFF",Dart:"#00B4AB",Swift:"#F05138"};
+let DATA=null, activeCat="";
 const $=s=>document.querySelector(s);
-const fmt=n=>n>=1000?(n/1000).toFixed(1).replace('.',',')+' mil':String(n);
+const fmt=n=>n>=1000?(n/1000).toFixed(1).replace(".",",")+" mil":String(n);
+const starSvg='<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>';
 
-function card(t){
-  return `<div class="card">
-    <div class="top"><h3><a href="${t.info_url}" target="_blank" rel="noopener">${t.name}</a></h3>
-    <span class="stars num">★ ${fmt(t.stars)}</span></div>
+function row(t){
+  const lc=LANGCOLORS[t.lang]||"#959da5";
+  return `<div class="row"><div class="main">
+    <h3><a href="${t.info_url}" target="_blank" rel="noopener">${t.name}</a>
+    ${t.mcp?'<span class="label label-mcp">MCP</span>':''}</h3>
     <p class="desc">${t.desc}</p>
-    <div class="meta">${t.lang?`<span class="lang">${t.lang}</span>`:''}<span>${t.category_label}</span></div>
-    <div class="actions">
-      <a class="btn info" href="${t.info_url}" target="_blank" rel="noopener">Más info</a>
-      <a class="btn dl" href="${t.download_url}" rel="noopener">Descargar</a>
-    </div></div>`;
+    <div class="meta">
+      ${t.lang?`<span><span class="langdot" style="background:${lc}"></span>${t.lang}</span>`:""}
+      <span class="num">${starSvg}${fmt(t.stars)}</span>
+      <span>${t.category_label}</span>
+    </div></div>
+    <div class="side"><a class="btn primary" href="${t.download_url}" rel="noopener">Descargar ZIP</a></div>
+  </div>`;
 }
-function isNew(t){
-  const days=(Date.now()-new Date(t.first_seen+'T00:00:00Z'))/864e5;
-  return days<=30;
-}
-function avgStars(cat){
-  const ts=DATA.tools.filter(t=>t.category===cat);
-  return ts.reduce((a,t)=>a+t.stars,0)/Math.max(1,ts.length);
+function isNew(t){return (Date.now()-new Date(t.first_seen+"T00:00:00Z"))/864e5<=30;}
+function avg(cat){const ts=DATA.tools.filter(t=>t.category===cat);
+  return ts.reduce((a,t)=>a+t.stars,0)/Math.max(1,ts.length);}
+function filtered(){
+  const q=$("#q").value.toLowerCase(), m=$("#mcp").checked, s=$("#sort").value;
+  let l=DATA.tools.filter(t=>(!activeCat||t.category===activeCat)&&(!m||t.mcp)&&
+    (!q||t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)));
+  l.sort((a,b)=>s==="stars"?b.stars-a.stars:s==="name"?a.name.localeCompare(b.name):
+    b.first_seen.localeCompare(a.first_seen));
+  return l;
 }
 function render(){
-  const q=$('#q').value.toLowerCase(), c=$('#cat').value, s=$('#sort').value;
-  let list=DATA.tools.filter(t=>
-    (!c||t.category===c) &&
-    (!q||t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)));
-  list.sort((a,b)=>s==='stars'?b.stars-a.stars:a.name.localeCompare(b.name));
-  // Novedades
-  const news=DATA.tools.filter(t=>isNew(t)&&t.stars>avgStars(t.category))
-    .sort((a,b)=>b.stars-a.stars).slice(0,6);
-  $('#grid-new').innerHTML=news.length?news.map(card).join(''):
+  const list=filtered(), q=$("#q").value, m=$("#mcp").checked;
+  $("#count").textContent=list.length+" resultados";
+  const news=DATA.tools.filter(t=>isNew(t)&&t.stars>avg(t.category))
+    .sort((a,b)=>b.stars-a.stars).slice(0,8);
+  $("#sec-new").style.display=(!q&&!m&&!activeCat)?"":"none";
+  $("#list-new").innerHTML=news.length?news.map(row).join(""):
     '<p class="empty">Sin novedades destacadas por ahora.</p>';
-  $('#sec-new').style.display=(!q&&!c)?'':'none';
-  // Categorías
-  const box=$('#cats'); box.innerHTML='';
-  for(const [key,label] of Object.entries(DATA.categories)){
-    if(c&&c!==key) continue;
-    const ts=list.filter(t=>t.category===key);
+  const box=$("#cats"); box.innerHTML="";
+  for(const [k,label] of Object.entries(DATA.categories)){
+    if(activeCat&&activeCat!==k) continue;
+    const ts=list.filter(t=>t.category===k);
     if(!ts.length) continue;
-    const sec=document.createElement('section');
-    sec.innerHTML=`<h2 class="sec">${label}</h2>
-      <p class="sub num">${ts.length} herramientas · promedio ${fmt(Math.round(avgStars(key)))} estrellas</p>
-      <div class="grid">${ts.map(card).join('')}</div>`;
-    box.appendChild(sec);
+    const s=document.createElement("section");
+    s.innerHTML=`<h2 class="sec">${label}</h2>
+      <p class="sub num">${ts.length} herramientas · promedio ${fmt(Math.round(avg(k)))} estrellas</p>
+      ${ts.map(row).join("")}`;
+    box.appendChild(s);
   }
   if(!box.children.length) box.innerHTML='<p class="empty">Sin resultados.</p>';
+  document.querySelectorAll(".pill").forEach(p=>
+    p.classList.toggle("on",p.dataset.cat===activeCat));
 }
-fetch('data/catalog.json').then(r=>r.json()).then(d=>{
+fetch("data/catalog.json").then(r=>r.json()).then(d=>{
   DATA=d;
-  $('#upd').textContent='Actualizado el '+d.updated+'.';
-  const sel=$('#cat');
+  $("#upd").textContent="Actualizado el "+d.updated;
+  const pills=$("#pills");
+  const all=document.createElement("button");
+  all.className="pill on"; all.dataset.cat=""; all.textContent="Todas";
+  all.onclick=()=>{activeCat="";render();}; pills.appendChild(all);
   for(const [k,v] of Object.entries(d.categories)){
-    const o=document.createElement('option'); o.value=k; o.textContent=v; sel.appendChild(o);
+    const b=document.createElement("button");
+    b.className="pill"; b.dataset.cat=k; b.textContent=v;
+    b.onclick=()=>{activeCat=activeCat===k?"":k;render();}; pills.appendChild(b);
   }
-  $('#q').addEventListener('input',render);
-  $('#cat').addEventListener('change',render);
-  $('#sort').addEventListener('change',render);
+  $("#q").addEventListener("input",render);
+  $("#sort").addEventListener("change",render);
+  $("#mcp").addEventListener("change",render);
   render();
 });
 </script>
