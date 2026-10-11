@@ -8,7 +8,7 @@
 :root{
   --bg:#ffffff; --canvas:#f6f8fa; --fg:#1f2328; --muted:#59636e;
   --border:#d1d9e0; --blue:#0969da; --blue-bg:#ddf4ff;
-  --green:#1a7f37; --green-bg:#dafbe1;
+  --green:#1a7f37; --green-bg:#dafbe1; --header:#24292f;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
@@ -16,28 +16,34 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helveti
 .num{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
-header{background:var(--canvas);border-bottom:1px solid var(--border);padding:16px 24px}
-.wrap{max-width:1012px;margin:0 auto}
+header{background:var(--header);color:#fff;padding:18px 24px}
 header h1{font-size:20px;font-weight:600}
-header h1 .sub{color:var(--muted);font-weight:400;font-size:14px;margin-left:8px}
-.toolbar{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center}
+header h1 .tag{display:inline-block;font-size:11px;font-weight:600;background:#388bfd33;
+  color:#79c0ff;border:1px solid #388bfd66;border-radius:2em;padding:2px 10px;
+  margin-left:10px;vertical-align:middle}
+header p{color:#adbac7;font-size:13px;margin-top:4px}
+.toolbar{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;align-items:center}
 .search{flex:1;min-width:200px;display:flex}
-.search input{width:100%;padding:7px 12px;font-size:14px;border:1px solid var(--border);
-  border-radius:6px;background:#fff;color:var(--fg)}
+.search input{width:100%;padding:7px 12px;font-size:14px;border:1px solid #444c56;
+  border-radius:6px;background:#2d333b;color:#fff}
+.search input::placeholder{color:#768390}
 .search input:focus{outline:2px solid var(--blue);border-color:var(--blue)}
-select{padding:7px 10px;font-size:13px;border:1px solid var(--border);border-radius:6px;
-  background:var(--canvas);color:var(--fg)}
-.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}
+select{padding:7px 10px;font-size:13px;border:1px solid #444c56;border-radius:6px;
+  background:#2d333b;color:#fff}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:#adbac7;cursor:pointer}
 .pills{display:flex;gap:8px;overflow-x:auto;padding:14px 0 4px}
-.pill{white-space:nowrap;font-size:12px;font-weight:500;padding:4px 12px;border:1px solid var(--border);
-  border-radius:2em;background:var(--canvas);color:var(--fg);cursor:pointer}
-.pill:hover{background:#eaeef2}
-.pill.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.pill{white-space:nowrap;font-size:12px;font-weight:600;padding:5px 12px;
+  border:1px solid #444c56;border-radius:2em;background:#2d333b;color:#adbac7;cursor:pointer;
+  display:flex;align-items:center;gap:6px}
+.pill .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.pill:hover{border-color:#768390;color:#fff}
+.pill.on{background:#fff;border-color:#fff;color:var(--header)}
 main{padding:8px 24px 60px}
-h2.sec{font-size:16px;font-weight:600;padding:20px 0 2px;border-bottom:1px solid var(--border);
-  margin-bottom:0;display:flex;align-items:center;gap:8px}
+h2.sec{font-size:16px;font-weight:600;padding:20px 0 2px;margin-bottom:0;
+  display:flex;align-items:center;gap:8px;border-bottom:3px solid var(--cat,#0969da)}
+h2.sec .cdot{width:14px;height:14px;border-radius:4px;background:var(--cat,#0969da);display:inline-block}
 p.sub{color:var(--muted);font-size:12px;padding:6px 0 0}
-.label{display:inline-block;font-size:11px;font-weight:500;line-height:18px;padding:0 8px;
+.label{display:inline-block;font-size:11px;font-weight:600;line-height:18px;padding:0 8px;
   border-radius:2em;border:1px solid transparent;vertical-align:middle}
 .label-mcp{color:#0550ae;background:var(--blue-bg);border-color:#b6e3ff}
 .label-new{color:var(--green);background:var(--green-bg);border-color:#aceebb}
@@ -50,12 +56,12 @@ p.sub{color:var(--muted);font-size:12px;padding:6px 0 0}
   border:1px solid rgba(0,0,0,.15);vertical-align:-1px}
 .meta svg{vertical-align:-2px;margin-right:4px}
 .row .side{display:flex;flex-direction:column;gap:8px;align-items:flex-end;justify-content:center}
-.btn{display:inline-block;font-size:12px;font-weight:500;padding:5px 14px;border-radius:6px;
+.btn{display:inline-block;font-size:12px;font-weight:600;padding:5px 14px;border-radius:6px;
   border:1px solid var(--border);background:var(--canvas);color:var(--fg);cursor:pointer;
   text-decoration:none;white-space:nowrap}
 .btn:hover{background:#eaeef2;text-decoration:none}
 .btn.primary{background:var(--green);border-color:var(--green);color:#fff}
-.btn.primary:hover{background:#1a7f37;filter:brightness(.94)}
+.btn.primary:hover{filter:brightness(.94);text-decoration:none}
 .empty{color:var(--muted);padding:24px 4px;font-size:14px}
 footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
   text-align:center;padding:20px}
@@ -64,8 +70,9 @@ footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
 </head>
 <body>
 <header>
-  <div class="wrap">
-    <h1>Tienda de herramientas IA<span class="sub">Lo más popular de GitHub, por categoría</span></h1>
+  <div class="wrap" style="max-width:1012px;margin:0 auto">
+    <h1>Tienda de herramientas IA <span class="tag">GitHub · por estrellas</span></h1>
+    <p>Las herramientas de IA más populares de GitHub, organizadas por categoría. <span id="upd"></span></p>
     <div class="toolbar">
       <div class="search"><input id="q" type="search" placeholder="Buscar herramienta..." autocomplete="off"></div>
       <select id="sort">
@@ -78,16 +85,16 @@ footer{border-top:1px solid var(--border);color:var(--muted);font-size:12px;
     <div class="pills" id="pills"></div>
   </div>
 </header>
-<main class="wrap">
+<main class="wrap" style="max-width:1012px;margin:0 auto">
   <div id="count"></div>
   <section id="sec-new">
-    <h2 class="sec">Novedades <span class="label label-new">NUEVO</span></h2>
+    <h2 class="sec" style="--cat:#1a7f37"><span class="cdot"></span>Novedades <span class="label label-new">NUEVO</span></h2>
     <p class="sub">Detectadas en los últimos 30 días, con estrellas por encima del promedio de su categoría.</p>
     <div id="list-new"></div>
   </section>
   <div id="cats"></div>
 </main>
-<footer><span id="upd"></span> · Datos de la API pública de GitHub · La insignia MCP indica que la herramienta se conecta por Model Context Protocol</footer>
+<footer><span id="upd2"></span> · Datos de la API pública de GitHub · La insignia MCP indica que la herramienta se conecta por Model Context Protocol</footer>
 <script>
 const LANGCOLORS={Python:"#3572A5",TypeScript:"#3178c6",JavaScript:"#f1e05a",Go:"#00ADD8",
 Rust:"#dea584",Shell:"#89e051","C++":"#f34b7d",C:"#555555","Jupyter Notebook":"#DA5B0B",
@@ -135,8 +142,9 @@ function render(){
     if(activeCat&&activeCat!==k) continue;
     const ts=list.filter(t=>t.category===k);
     if(!ts.length) continue;
+    const col=(DATA.colors&&DATA.colors[k])||"#0969da";
     const s=document.createElement("section");
-    s.innerHTML=`<h2 class="sec">${label}</h2>
+    s.innerHTML=`<h2 class="sec" style="--cat:${col}"><span class="cdot"></span>${label}</h2>
       <p class="sub num">${ts.length} herramientas · promedio ${fmt(Math.round(avg(k)))} estrellas</p>
       ${ts.map(row).join("")}`;
     box.appendChild(s);
@@ -145,18 +153,20 @@ function render(){
   document.querySelectorAll(".pill").forEach(p=>
     p.classList.toggle("on",p.dataset.cat===activeCat));
 }
-fetch("data/catalog.json").then(r=>r.json()).then(d=>{
+fetch("data/catalog.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
   DATA=d;
-  $("#upd").textContent="Actualizado el "+d.updated;
+  $("#upd").textContent="Actualizado el "+d.updated+".";
+  $("#upd2").textContent="Actualizado el "+d.updated;
   const pills=$("#pills");
-  const all=document.createElement("button");
-  all.className="pill on"; all.dataset.cat=""; all.textContent="Todas";
-  all.onclick=()=>{activeCat="";render();}; pills.appendChild(all);
-  for(const [k,v] of Object.entries(d.categories)){
+  const mk=(k,v,col)=>{
     const b=document.createElement("button");
-    b.className="pill"; b.dataset.cat=k; b.textContent=v;
-    b.onclick=()=>{activeCat=activeCat===k?"":k;render();}; pills.appendChild(b);
-  }
+    b.className="pill"+(k===""?" on":""); b.dataset.cat=k;
+    b.innerHTML=(col?`<span class="dot" style="background:${col}"></span>`:"")+v;
+    b.onclick=()=>{activeCat=activeCat===k?"":k;render();};
+    pills.appendChild(b);
+  };
+  mk("","Todas",null);
+  for(const [k,v] of Object.entries(d.categories)) mk(k,v,(d.colors||{})[k]);
   $("#q").addEventListener("input",render);
   $("#sort").addEventListener("change",render);
   $("#mcp").addEventListener("change",render);
