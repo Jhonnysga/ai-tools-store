@@ -13,7 +13,8 @@
   "vision": "Visión por computadora",
   "musica": "Música",
   "video": "Video IA",
-  "ocr": "OCR y documentos"
+  "ocr": "OCR y documentos",
+  "automatizacion": "Automatización"
  },
  "colors": {
   "agentes": "#a371f7",
@@ -28,7 +29,8 @@
   "vision": "#7986ff",
   "musica": "#d2a8ff",
   "video": "#ff7b72",
-  "ocr": "#e3b341"
+  "ocr": "#e3b341",
+  "automatizacion": "#0d9488"
  },
  "tools": [
   {
@@ -1533,8 +1535,8 @@
   },
   {
    "name": "activepieces/activepieces",
-   "category": "agentes",
-   "category_label": "Agentes y frameworks",
+   "category": "automatizacion",
+   "category_label": "Automatización",
    "desc": "Agentes IA, MCPs y automatización de flujos (~400 servidores MCP).",
    "stars": 24998,
    "lang": "TypeScript",
@@ -1842,6 +1844,54 @@
    "download_url": "https://github.com/op7418/CodePilot/archive/refs/heads/main.zip",
    "first_seen": "2026-10-11",
    "mcp": true
+  },
+  {
+   "name": "n8n-io/n8n",
+   "category": "automatizacion",
+   "category_label": "Automatización",
+   "desc": "Plataforma de automatización de flujos con IA nativa.",
+   "stars": 206993,
+   "lang": "TypeScript",
+   "info_url": "https://github.com/n8n-io/n8n",
+   "download_url": "https://github.com/n8n-io/n8n/archive/refs/heads/master.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "browser-use/browser-use",
+   "category": "automatizacion",
+   "category_label": "Automatización",
+   "desc": "Agentes que usan el navegador.",
+   "stars": 117634,
+   "lang": "Python",
+   "info_url": "https://github.com/browser-use/browser-use",
+   "download_url": "https://github.com/browser-use/browser-use/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "apache/airflow",
+   "category": "automatizacion",
+   "category_label": "Automatización",
+   "desc": "Plataforma para crear y programar flujos de datos.",
+   "stars": 47146,
+   "lang": "Python",
+   "info_url": "https://github.com/apache/airflow",
+   "download_url": "https://github.com/apache/airflow/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
+  },
+  {
+   "name": "windmill-labs/windmill",
+   "category": "automatizacion",
+   "category_label": "Automatización",
+   "desc": "Plataforma open source para automatizar tu infraestructura.",
+   "stars": 18161,
+   "lang": "Rust",
+   "info_url": "https://github.com/windmill-labs/windmill",
+   "download_url": "https://github.com/windmill-labs/windmill/archive/refs/heads/main.zip",
+   "first_seen": "2026-10-11",
+   "mcp": false
   }
  ]
 }
