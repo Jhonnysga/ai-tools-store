@@ -24,6 +24,7 @@ SEARCHES = {
     "musica": "ai music generation",
     "video": "topic:text-to-video",
     "ocr": "topic:ocr",
+    "automatizacion": "workflow automation ai",
 }
 
 def gh(path):
