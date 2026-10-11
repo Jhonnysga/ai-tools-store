@@ -11,12 +11,12 @@ BASE = "/home/hatch/workspace/ai-tools-store"
 CATALOG = f"{BASE}/data/catalog.json"
 SEARCHES = {
     "agentes": "ai agent framework",
-    "mcp": "mcp server model context protocol",
     "inferencia": "llm inference serving",
     "voz": "text-to-speech engine",
     "imagen": "stable diffusion webui",
     "rag": "retrieval augmented generation rag",
     "codigo": "ai coding assistant",
+    "codigo:mcp": "mcp server model context protocol",
 }
 
 def gh(path):
@@ -48,6 +48,8 @@ def main():
     if mode == "weekly":
         known = {t["name"] for t in cat["tools"]}
         for ckey, q in SEARCHES.items():
+            is_mcp = ckey.endswith(":mcp")
+            ckey = ckey.split(":")[0]
             try:
                 res = gh(f"/search/repositories?q={urllib.request.quote(q)}&sort=stars&order=desc&per_page=10")
                 for item in res.get("items", []):
@@ -66,6 +68,7 @@ def main():
                         "info_url": item["html_url"],
                         "download_url": f"https://github.com/{name}/archive/refs/heads/{b}.zip",
                         "first_seen": today,
+                        "mcp": is_mcp,
                     })
                     print(f"nuevo: {name} ({item['stargazers_count']})")
                 time.sleep(4)
