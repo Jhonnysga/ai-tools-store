@@ -1,0 +1,467 @@
+{
+ "obra/superpowers": {
+  "2026-10-13": 298617
+ },
+ "langchain-ai/langchain": {
+  "2026-10-13": 147784
+ },
+ "FoundationAgents/MetaGPT": {
+  "2026-10-13": 70838
+ },
+ "microsoft/autogen": {
+  "2026-10-13": 61387
+ },
+ "crewAIInc/crewAI": {
+  "2026-10-13": 59659
+ },
+ "HKUDS/nanobot": {
+  "2026-10-13": 48997
+ },
+ "langchain-ai/langgraph": {
+  "2026-10-13": 43212
+ },
+ "AstrBotDevs/AstrBot": {
+  "2026-10-13": 41834
+ },
+ "openai/openai-agents-python": {
+  "2026-10-13": 30014
+ },
+ "mastra-ai/mastra": {
+  "2026-10-13": 28792
+ },
+ "deepset-ai/haystack": {
+  "2026-10-13": 26737
+ },
+ "humanlayer/12-factor-agents": {
+  "2026-10-13": 26668
+ },
+ "vllm-project/vllm": {
+  "2026-10-13": 93730
+ },
+ "sgl-project/sglang": {
+  "2026-10-13": 37094
+ },
+ "kvcache-ai/Mooncake": {
+  "2026-10-13": 6783
+ },
+ "gpustack/gpustack": {
+  "2026-10-13": 5824
+ },
+ "skyzh/tiny-llm": {
+  "2026-10-13": 4771
+ },
+ "ModelTC/LightLLM": {
+  "2026-10-13": 4319
+ },
+ "PaddlePaddle/FastDeploy": {
+  "2026-10-13": 3719
+ },
+ "containers/ramalama": {
+  "2026-10-13": 3084
+ },
+ "efeslab/Nanoflow": {
+  "2026-10-13": 975
+ },
+ "EricLBuehler/candle-vllm": {
+  "2026-10-13": 733
+ },
+ "vectorch-ai/ScaleLLM": {
+  "2026-10-13": 498
+ },
+ "netease-youdao/EmotiVoice": {
+  "2026-10-13": 8539
+ },
+ "OHF-Voice/piper1-gpl": {
+  "2026-10-13": 5865
+ },
+ "buxuku/SmartSub": {
+  "2026-10-13": 5678
+ },
+ "0xShug0/audio.cpp": {
+  "2026-10-13": 3511
+ },
+ "High-Logic/Genie-TTS": {
+  "2026-10-13": 1804
+ },
+ "Capsize-Games/airunner": {
+  "2026-10-13": 1319
+ },
+ "MycroftAI/mimic3": {
+  "2026-10-13": 1265
+ },
+ "diodiogod/TTS-Audio-Suite": {
+  "2026-10-13": 1227
+ },
+ "netease-youdao/Confucius4-TTS": {
+  "2026-10-13": 836
+ },
+ "sipeter/CloneTTS": {
+  "2026-10-13": 840
+ },
+ "samuel-vitorino/sopro": {
+  "2026-10-13": 974
+ },
+ "travisvn/chatterbox-tts-api": {
+  "2026-10-13": 688
+ },
+ "echogarden-project/echogarden": {
+  "2026-10-13": 453
+ },
+ "AUTOMATIC1111/stable-diffusion-webui": {
+  "2026-10-13": 165039
+ },
+ "calesthio/OpenMontage": {
+  "2026-10-13": 67942
+ },
+ "invoke-ai/InvokeAI": {
+  "2026-10-13": 28616
+ },
+ "lllyasviel/stable-diffusion-webui-forge": {
+  "2026-10-13": 13059
+ },
+ "zai-org/CogVideo": {
+  "2026-10-13": 13078
+ },
+ "AbdBarho/stable-diffusion-webui-docker": {
+  "2026-10-13": 7305
+ },
+ "open-mmlab/mmagic": {
+  "2026-10-13": 7473
+ },
+ "Sygil-Dev/sygil-webui": {
+  "2026-10-13": 7859
+ },
+ "Tencent-Hunyuan/Hunyuan3D-1": {
+  "2026-10-13": 3490
+ },
+ "FurkanGozukara/Stable-Diffusion": {
+  "2026-10-13": 2778
+ },
+ "infiniflow/ragflow": {
+  "2026-10-13": 92155
+ },
+ "HKUDS/LightRAG": {
+  "2026-10-13": 40115
+ },
+ "microsoft/graphrag": {
+  "2026-10-13": 36324
+ },
+ "NirDiamant/RAG_Techniques": {
+  "2026-10-13": 29848
+ },
+ "SciPhi-AI/R2R": {
+  "2026-10-13": 8018
+ },
+ "weaviate/Verba": {
+  "2026-10-13": 7697
+ },
+ "truefoundry/cognita": {
+  "2026-10-13": 4413
+ },
+ "rag-web-ui/rag-web-ui": {
+  "2026-10-13": 3300
+ },
+ "NVIDIA/ChatRTX": {
+  "2026-10-13": 3112
+ },
+ "athina-ai/rag-cookbooks": {
+  "2026-10-13": 2575
+ },
+ "Fission-AI/OpenSpec": {
+  "2026-10-13": 71831
+ },
+ "TabbyML/tabby": {
+  "2026-10-13": 33911
+ },
+ "chenhg5/cc-connect": {
+  "2026-10-13": 15916
+ },
+ "coleam00/context-engineering-intro": {
+  "2026-10-13": 13886
+ },
+ "google/artemis": {
+  "2026-10-13": 11518
+ },
+ "sweepai/sweep": {
+  "2026-10-13": 7708
+ },
+ "github/CopilotForXcode": {
+  "2026-10-13": 6334
+ },
+ "google/agents-cli": {
+  "2026-10-13": 6086
+ },
+ "the-open-agent/openagent": {
+  "2026-10-13": 5688
+ },
+ "langwatch/langwatch": {
+  "2026-10-13": 4944
+ },
+ "sourcegraph/cody-public-snapshot": {
+  "2026-10-13": 3800
+ },
+ "twinnydotdev/twinny": {
+  "2026-10-13": 3669
+ },
+ "modelcontextprotocol/python-sdk": {
+  "2026-10-13": 24566
+ },
+ "modelcontextprotocol/typescript-sdk": {
+  "2026-10-13": 13575
+ },
+ "modelcontextprotocol/registry": {
+  "2026-10-13": 7349
+ },
+ "hangwin/mcp-chrome": {
+  "2026-10-13": 12488
+ },
+ "mobile-next/mobile-mcp": {
+  "2026-10-13": 9096
+ },
+ "CodeGraphContext/CodeGraphContext": {
+  "2026-10-13": 4264
+ },
+ "appcypher/awesome-mcp-servers": {
+  "2026-10-13": 5795
+ },
+ "open-webui/open-webui": {
+  "2026-10-13": 155564
+ },
+ "LibreChat-AI/LibreChat": {
+  "2026-10-13": 45635
+ },
+ "siteboon/claudecodeui": {
+  "2026-10-13": 14064
+ },
+ "enricoros/big-AGI": {
+  "2026-10-13": 7144
+ },
+ "open-webui/mcpo": {
+  "2026-10-13": 4400
+ },
+ "coleam00/local-ai-packaged": {
+  "2026-10-13": 3780
+ },
+ "milvus-io/milvus": {
+  "2026-10-13": 46376
+ },
+ "qdrant/qdrant": {
+  "2026-10-13": 35064
+ },
+ "weaviate/weaviate": {
+  "2026-10-13": 16879
+ },
+ "alibaba/zvec": {
+  "2026-10-13": 16106
+ },
+ "manticoresoftware/manticoresearch": {
+  "2026-10-13": 12054
+ },
+ "unslothai/unsloth": {
+  "2026-10-13": 77948
+ },
+ "hiyouga/LlamaFactory": {
+  "2026-10-13": 75452
+ },
+ "huggingface/peft": {
+  "2026-10-13": 21785
+ },
+ "meta-llama/llama-cookbook": {
+  "2026-10-13": 18566
+ },
+ "xming521/WeClone": {
+  "2026-10-13": 18291
+ },
+ "ConardLi/easy-dataset": {
+  "2026-10-13": 14998
+ },
+ "axolotl-ai-cloud/axolotl": {
+  "2026-10-13": 12561
+ },
+ "ludwig-ai/ludwig": {
+  "2026-10-13": 11773
+ },
+ "ultralytics/ultralytics": {
+  "2026-10-13": 62465
+ },
+ "ultralytics/yolov5": {
+  "2026-10-13": 58161
+ },
+ "THU-MIG/yolov10": {
+  "2026-10-13": 11335
+ },
+ "AILab-CVC/YOLO-World": {
+  "2026-10-13": 6581
+ },
+ "meituan/YOLOv6": {
+  "2026-10-13": 5893
+ },
+ "lyuwenyu/RT-DETR": {
+  "2026-10-13": 5590
+ },
+ "roflcoopter/viseron": {
+  "2026-10-13": 3577
+ },
+ "tinyvision/DAMO-YOLO": {
+  "2026-10-13": 3192
+ },
+ "multimodal-art-projection/YuE": {
+  "2026-10-13": 11890
+ },
+ "fspecii/ace-step-ui": {
+  "2026-10-13": 5043
+ },
+ "riffusion/riffusion-hobby": {
+  "2026-10-13": 3900
+ },
+ "gcui-art/suno-api": {
+  "2026-10-13": 3259
+ },
+ "salu133445/musegan": {
+  "2026-10-13": 2046
+ },
+ "ivcylc/OpenMusic": {
+  "2026-10-13": 637
+ },
+ "punkpeye/awesome-mcp-servers": {
+  "2026-10-13": 96290
+ },
+ "modelcontextprotocol/servers": {
+  "2026-10-13": 91221
+ },
+ "DeusData/codebase-memory-mcp": {
+  "2026-10-13": 46513
+ },
+ "microsoft/playwright-mcp": {
+  "2026-10-13": 38101
+ },
+ "github/github-mcp-server": {
+  "2026-10-13": 33589
+ },
+ "PrefectHQ/fastmcp": {
+  "2026-10-13": 28067
+ },
+ "googleapis/mcp-toolbox": {
+  "2026-10-13": 16658
+ },
+ "GLips/Figma-Context-MCP": {
+  "2026-10-13": 15980
+ },
+ "tadata-org/fastapi_mcp": {
+  "2026-10-13": 12019
+ },
+ "mark3labs/mcp-go": {
+  "2026-10-13": 9160
+ },
+ "modelcontextprotocol/go-sdk": {
+  "2026-10-13": 5212
+ },
+ "modelcontextprotocol/csharp-sdk": {
+  "2026-10-13": 4581
+ },
+ "jacob-bd/gemini-notebook-mcp-cli": {
+  "2026-10-13": 6302
+ },
+ "54yyyu/zotero-mcp": {
+  "2026-10-13": 5366
+ },
+ "TykTechnologies/tyk": {
+  "2026-10-13": 10860
+ },
+ "lastmile-ai/mcp-agent": {
+  "2026-10-13": 8574
+ },
+ "0x4m4/hexstrike-ai": {
+  "2026-10-13": 12759
+ },
+ "activepieces/activepieces": {
+  "2026-10-13": 25036
+ },
+ "nanbingxyz/5ire": {
+  "2026-10-13": 5373
+ },
+ "zylon-ai/private-gpt": {
+  "2026-10-13": 57577
+ },
+ "ollama/ollama": {
+  "2026-10-13": 183045
+ },
+ "nomic-ai/gpt4all": {
+  "2026-10-13": 77369
+ },
+ "mudler/LocalAI": {
+  "2026-10-13": 49513
+ },
+ "Lightning-AI/litgpt": {
+  "2026-10-13": 13704
+ },
+ "Comfy-Org/ComfyUI": {
+  "2026-10-13": 137323
+ },
+ "RVC-Boss/GPT-SoVITS": {
+  "2026-10-13": 62765
+ },
+ "coqui-ai/TTS": {
+  "2026-10-13": 46113
+ },
+ "debpalash/VoiceStudio": {
+  "2026-10-13": 62842
+ },
+ "suno-ai/bark": {
+  "2026-10-13": 39268
+ },
+ "Aider-AI/aider": {
+  "2026-10-13": 49528
+ },
+ "roboflow/supervision": {
+  "2026-10-13": 51192
+ },
+ "blakeblackshear/frigate": {
+  "2026-10-13": 36553
+ },
+ "open-mmlab/mmdetection": {
+  "2026-10-13": 32991
+ },
+ "Lightricks/LTX-Video": {
+  "2026-10-13": 11090
+ },
+ "PaddlePaddle/PaddleOCR": {
+  "2026-10-13": 91036
+ },
+ "opendatalab/MinerU": {
+  "2026-10-13": 81659
+ },
+ "tesseract-ocr/tesseract": {
+  "2026-10-13": 76974
+ },
+ "hiroi-sora/Umi-OCR": {
+  "2026-10-13": 47873
+ },
+ "paperless-ngx/paperless-ngx": {
+  "2026-10-13": 46627
+ },
+ "cline/cline": {
+  "2026-10-13": 70277
+ },
+ "punkpeye/awesome-mcp-clients": {
+  "2026-10-13": 6609
+ },
+ "firecrawl/firecrawl-mcp-server": {
+  "2026-10-13": 7596
+ },
+ "op7418/CodePilot": {
+  "2026-10-13": 6498
+ },
+ "n8n-io/n8n": {
+  "2026-10-13": 207257
+ },
+ "browser-use/browser-use": {
+  "2026-10-13": 117876
+ },
+ "apache/airflow": {
+  "2026-10-13": 47166
+ },
+ "windmill-labs/windmill": {
+  "2026-10-13": 18175
+ }
+}
